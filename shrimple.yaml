@@ -1,0 +1,439 @@
+# Shrimple configuration for Javelin
+#
+# This configuration gives a close approximation to Shrimple.
+# There are some differences such Shrimple produces AG -> "ag" and A*G -> ag.
+# This configuration will produce AG -> "ag" and A*G -> "ug" by attaching
+# the unused asterisk to the vowel.
+#
+name: Shrimple
+maximumOutlineLength: 12
+
+# Starters have a stroke, mask, and definition.
+# If no mask is provided, then it is assumed full match is required.
+# A starting 
+starters:
+  - stroke: SP*
+    definition: ""
+  - stroke: SW*
+    definition: "{^^}"
+  - stroke: SHR*EUFRPL
+    definition: "{}{-|}"
+  - stroke: KAPS
+    definition: "{<}"
+
+# Translation can be customized by adjusting the list below.
+# The letters are processed in top down priority, with order being a number
+# between 0 and 3 indicating how to cluster the output, so order 2 elements
+# may have higher stroke precedence, but will always be output after order 0
+# and 1.
+letters:
+  - stroke: STKPWHR
+    data: z
+    order: 0
+  - stroke: SKWR
+    data: j
+    order: 0
+  - stroke: SKHR
+    data: shr
+    order: 0
+  - stroke: SR
+    data: v
+    order: 0
+  - stroke: S
+    data: s
+    order: 0
+  - stroke: TKPW
+    data: g
+    order: 0
+  - stroke: S
+    data: s
+    order: 0
+  - stroke: TKR
+    data: dr
+    order: 0
+  - stroke: TK
+    data: d
+    order: 0
+  - stroke: TPW
+    data: tb
+    order: 0
+  - stroke: TPHR
+    data: tpl
+    order: 0
+  - stroke: TPH
+    data: n
+    order: 0
+  - stroke: TP
+    data: f
+    order: 0
+  - stroke: T
+    data: t
+    order: 0
+  - stroke: KP
+    data: x
+    order: 0
+  - stroke: KWR
+    data: y
+    order: 0
+  - stroke: KW
+    data: q
+    order: 0
+  - stroke: KH
+    data: ch
+    order: 0
+  - stroke: KR
+    data: c
+    order: 0
+  - stroke: K
+    data: k
+    order: 0
+  - stroke: PW
+    data: b
+    order: 0
+  - stroke: PHR
+    data: pl
+    order: 0
+  - stroke: PH
+    data: m
+    order: 0
+  - stroke: P
+    data: p
+    order: 0
+  - stroke: W
+    data: w
+    order: 0
+  - stroke: HR
+    data: l
+    order: 0
+  - stroke: H
+    data: h
+    order: 0
+  - stroke: R
+    data: r
+    order: 0
+
+  # Enders
+  - stroke: "*FRPB"
+    data: nch
+    order: 2
+  - stroke: "*FT"
+    data: ft
+    order: 2
+  - stroke: -FRPB
+    data: rch
+    order: 2
+  - stroke: -FRPL
+    data: mpl
+    order: 2
+  - stroke: -FRBL
+    data: mbl
+    order: 2
+  - stroke: -FRP
+    data: mp
+    order: 2
+  - stroke: -FRB
+    data: mb
+    order: 2
+  - stroke: -FRL
+    data: ml
+    order: 2
+  - stroke: -FP
+    data: ch
+    order: 2
+  - stroke: -FB
+    data: v
+    order: 2
+  - stroke: -FT
+    data: st
+    order: 2
+  - stroke: -F
+    data: f
+    order: 2
+  - stroke: -RB
+    data: sh
+    order: 2
+  - stroke: -R
+    data: r
+    order: 2
+  - stroke: "*PBG"
+    data: nk
+    order: 2
+  - stroke: "*PZ"
+    data: h
+    order: 2
+  - stroke: -PBLG
+    data: j
+    order: 2
+  - stroke: -PBG
+    data: ng
+    order: 2
+  - stroke: -PB
+    data: n
+    order: 2
+  - stroke: -PL
+    data: m
+    order: 2
+  - stroke: -PS
+    data: h
+    order: 2
+  - stroke: -P
+    data: p
+    order: 2
+  - stroke: -BGS
+    data: x
+    order: 2
+  - stroke: "*BG"
+    data: ck
+    order: 2
+  - stroke: -BG
+    data: k
+    order: 2
+  - stroke: -B
+    data: b
+    order: 2
+  - stroke: -P
+    data: p
+    order: 2
+  - stroke: "*LG"
+    data: lk
+    order: 2
+  - stroke: -L
+    data: l
+    order: 2
+  - stroke: -GT
+    data: xt
+    order: 2
+  - stroke: -GS
+    data: tion
+    order: 2
+  - stroke: -G
+    data: g
+    order: 2
+  - stroke: "*T"
+    data: th
+    order: 2
+  - stroke: -TS
+    data: ts
+    order: 2
+  - stroke: -TZ
+    data: se
+    order: 2
+  - stroke: -T
+    data: t
+    order: 2
+  - stroke: "*SZ"
+    data: c
+    order: 2
+  - stroke: "*S"
+    data: st
+    order: 2
+  - stroke: -SD
+    data: e
+    order: 2
+  - stroke: -S
+    data: s
+    order: 2
+  - stroke: "*DZ"
+    data: e
+    order: 2
+  - stroke: "*D"
+    data: y
+    order: 2
+  - stroke: -D
+    data: d
+    order: 2
+  - stroke: "*Z"
+    data: z
+    order: 2
+  - stroke: -Z
+    data: e
+    order: 2
+
+  # Vowels
+  - stroke: AOEU
+    data: ie
+    order: 1
+  - stroke: AOE
+    data: ee
+    order: 1
+  - stroke: AO*
+    data: i
+    order: 1
+  - stroke: A*
+    data: u
+    order: 1
+  - stroke: AOU
+    data: ue
+    order: 1
+  - stroke: AO
+    data: oo
+    order: 1
+  - stroke: A*
+    data: u
+    order: 1
+  - stroke: AEU
+    data: ai
+    order: 1
+  - stroke: AE
+    data: ea
+    order: 1
+  - stroke: AU
+    data: au
+    order: 1
+  - stroke: A
+    data: a
+    order: 1
+  - stroke: OEU
+    data: oi
+    order: 1
+  - stroke: OE
+    data: oe
+    order: 1
+  - stroke: OU
+    data: ou
+    order: 1
+  - stroke: O*
+    data: e
+    order: 1
+  - stroke: O
+    data: o
+    order: 1
+  - stroke: EU
+    data: i
+    order: 1
+  - stroke: E
+    data: e
+    order: 1
+  - stroke: U
+    data: u
+    order: 1
+
+# Exits determine when orthospelling should stop.
+# Each exit has a mask and a stroke.
+# If no mask is provided, then it is assumed full match is required.
+exits:
+  # Punctuation
+  - stroke: TK-LS     #no space
+  - stroke: S-P       #space
+  - stroke: KPA       #caps
+  - stroke: KPA*      #caps no space
+  - stroke: R-R       #enter
+  - stroke: TP-PL     #.
+  - stroke: TA*B      #can't remember
+  - stroke: TPWA*     #left hand tab
+  - stroke: R*        #left hand return
+  - stroke: KW-PL     #?
+  - stroke: TP-BG     #o
+  - stroke: KW-BG     #,
+  - stroke: AEZ       #'s
+  - stroke: A*ES      #s'
+  - stroke: AES       #'s
+  - stroke: HAERB     ##
+  - stroke: KWRA*T    #@
+  - stroke: P-P       #.
+  - stroke: H-B       #-
+  - stroke: H*B       #-
+  - stroke: TPHO*FRL  #normal
+
+  ## Navigation
+  - stroke: STPH-R
+  - stroke: STPH-RB
+  - stroke: STPH-P
+  - stroke: STPH-B
+  - stroke: STPH-BG
+  - stroke: STPH-G
+  - stroke: PW-FP
+
+  # Left finger exits
+  - mask: "#STKPWHR"
+    stroke: SKWH
+
+  ## Jeff's full phrasing
+  - mask: "#STKPWHR"
+    stroke: SWR     #I
+  - mask: "#STKPWHR"
+    stroke: TWR     #we
+  - mask: "#STKPWHR"
+    stroke: KPWR    #you
+  - mask: "#STKPWHR"
+    stroke: KWHR    #he
+  - mask: "#STKPWHR"
+    stroke: SKWHR   #she
+  - mask: "#STKPWHR"
+    stroke: KPWH    #it
+  - mask: "#STKPWHR"
+    stroke: TWH     #they
+  - mask: "#STKPWHR"
+    stroke: STKH    #this
+  - mask: "#STKPWHR"
+    stroke: STKWH   #these
+  - mask: "#STKPWHR"
+    stroke: STWH    #that
+  - mask: "#STKPWHR"
+    stroke: STHR    #there
+  - mask: "#STKPWHR"
+    stroke: STPHR   #there
+  - mask: "#STKPWHR"
+    stroke: STKPWHR #null
+  - mask: "#STKPWHR"
+    stroke: STWR    #null
+
+  # Left hand chords
+  ## Jeff's full phrasing
+  - mask: "#STKPWHRAO"
+    stroke: SWR         #I
+  - mask: "#STKPWHRAO"
+    stroke: TWR         #we
+  - mask: "#STKPWHRAO"
+    stroke: KPWR        #you
+  - mask: "#STKPWHRAO"
+    stroke: KWHR        #he
+  - mask: "#STKPWHRAO"
+    stroke: SKWHR       #she
+  - mask: "#STKPWHRAO"
+    stroke: KPWH        #it
+  - mask: "#STKPWHRAO"
+    stroke: TWH         #they
+  - mask: "#STKPWHRAO"
+    stroke: STKH        #this
+  - mask: "#STKPWHRAO"
+    stroke: STKWH       #these
+  - mask: "#STKPWHRAO"
+    stroke: STWH        #that
+  - mask: "#STKPWHRAO"
+    stroke: STHR        #there
+  - mask: "#STKPWHRAO"
+    stroke: STPHR       #there
+  - mask: "#STKPWHRAO"
+    stroke: STKPWHR     #null
+  - mask: "#STKPWHRAO"
+    stroke: STWR        #null
+
+  ## Jeff's simple starters
+  - mask: "#STKPWHRAO"
+    stroke: STPA       #if
+  - mask: "#STKPWHRAO"
+    stroke: STHA       #that
+  - mask: "#STKPWHRAO"
+    stroke: SWH       #when
+  - mask: "#STKPWHRAO"
+    stroke: SWHR       #where
+  - mask: "#STKPWHRAO"
+    stroke: SWHA       #what
+  - mask: "#STKPWHRAO"
+    stroke: SWHO       #who
+  - mask: "#STKPWHRAO"
+    stroke: SWHAO     #why
+  - mask: "#STKPWHRAO"
+    stroke: SWHRAO      #how
+  - mask: "#STKPWHRAO"
+    stroke: SPWH       #but
+  - mask: "#STKPWHRAO"
+    stroke: SKP       #and
+  - mask: "#STKPWHRAO"
+    stroke: SKPR       #or
+
+ # Right finger chords
+ ## Emily's stuff (might also have to do this for my phrasing too?)
+  - mask: "*FRPBLGTSZ"
+    stroke: LTZ
