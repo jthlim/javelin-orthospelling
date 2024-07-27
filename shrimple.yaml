@@ -1,16 +1,21 @@
 # Shrimple configuration for Javelin
 #
 # This configuration gives a close approximation to Shrimple.
-# There are some differences such Shrimple produces AG -> "ag" and A*G -> ag.
+# There are some differences: Shrimple produces AG -> "ag" and A*G -> ag.
 # This configuration will produce AG -> "ag" and A*G -> "ug" by attaching
 # the unused asterisk to the vowel.
-#
+
+# The name of the dictionary within Javelin.
 name: Shrimple
 maximumOutlineLength: 12
 
+# Starters are the strokes that activate the orthospelling dictionary.
+#
 # Starters have a stroke, mask, and definition.
 # If no mask is provided, then it is assumed full match is required.
-# A starting 
+#
+# If a mask is supplied, then the remainder of the starting stroke will be
+# processed using letter rules below.
 starters:
   - stroke: SP*
     definition: ""
@@ -21,7 +26,7 @@ starters:
   - stroke: KAPS
     definition: "{<}"
 
-# Translation can be customized by adjusting the list below.
+# Translations can be customized by adjusting the list below.
 # The letters are processed in top down priority, with order being a number
 # between 0 and 3 indicating how to cluster the output, so order 2 elements
 # may have higher stroke precedence, but will always be output after order 0
@@ -309,6 +314,7 @@ letters:
     order: 1
 
 # Exits determine when orthospelling should stop.
+#
 # Each exit has a mask and a stroke.
 # If no mask is provided, then it is assumed full match is required.
 exits:
