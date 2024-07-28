@@ -28,7 +28,7 @@ starters:
 
 # Translations can be customized by adjusting the list below.
 # The letters are processed in top down priority, with order being a number
-# between 0 and 3 indicating how to cluster the output, so order 2 elements
+# between 0 and 255 indicating how to cluster the output, so order 2 elements
 # may have higher stroke precedence, but will always be output after order 0
 # and 1.
 letters:
