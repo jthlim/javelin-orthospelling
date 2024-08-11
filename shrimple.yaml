@@ -36,288 +36,292 @@ letters:
     data: z
     order: 0
   - stroke: SKWR
+    avoidMask: TPH
     data: j
     order: 0
   - stroke: SKHR
+    avoidMask: TPW
     data: shr
     order: 0
   - stroke: SR
     data: v
+    avoidMask: TKPWH
     order: 0
   - stroke: S
     data: s
     order: 0
   - stroke: TKPW
     data: g
-    order: 0
-  - stroke: S
-    data: s
-    order: 0
+    order: 1
   - stroke: TKR
+    avoidMask: PWH
     data: dr
-    order: 0
+    order: 1
   - stroke: TK
     data: d
-    order: 0
-  - stroke: TPW
-    data: tb
-    order: 0
-  - stroke: TPHR
-    data: tpl
-    order: 0
-  - stroke: TPH
-    data: n
-    order: 0
-  - stroke: TP
-    data: f
-    order: 0
-  - stroke: T
-    data: t
-    order: 0
-  - stroke: KP
-    data: x
-    order: 0
-  - stroke: KWR
-    data: y
-    order: 0
-  - stroke: KW
-    data: q
-    order: 0
-  - stroke: KH
-    data: ch
-    order: 0
-  - stroke: KR
-    data: c
-    order: 0
-  - stroke: K
-    data: k
-    order: 0
-  - stroke: PW
-    data: b
-    order: 0
+    order: 1
   - stroke: PHR
     data: pl
-    order: 0
-  - stroke: PH
-    data: m
-    order: 0
-  - stroke: P
-    data: p
-    order: 0
-  - stroke: W
-    data: w
-    order: 0
+    order: 3
   - stroke: HR
     data: l
-    order: 0
+    order: 5
+  - stroke: TPW
+    data: tb
+    order: 1
+  - stroke: TPHR
+    data: tpl
+    order: 1
+  - stroke: TPH
+    data: n
+    order: 1
+  - stroke: TP
+    data: f
+    order: 1
+  - stroke: T
+    data: t
+    order: 1
+  - stroke: KP
+    data: x
+    order: 2
+  - stroke: KWR
+    data: y
+    order: 2
+  - stroke: KW
+    data: q
+    order: 2
+  - stroke: KH
+    data: ch
+    order: 2
+  - stroke: KR
+    data: c
+    order: 2
+  - stroke: K
+    data: k
+    order: 2
+  - stroke: PW
+    data: b
+    order: 3
+  - stroke: PR
+    data: pr
+    order: 3
+  - stroke: PH
+    data: m
+    order: 3
+  - stroke: P
+    data: p
+    order: 3
+  - stroke: W
+    data: w
+    order: 4
   - stroke: H
     data: h
-    order: 0
+    order: 5
   - stroke: R
     data: r
-    order: 0
+    order: 6
 
   # Enders
   - stroke: "*FRPB"
     data: nch
-    order: 2
+    order: 11
   - stroke: "*FT"
     data: ft
-    order: 2
+    order: 11
   - stroke: -FRPB
     data: rch
-    order: 2
+    order: 11
   - stroke: -FRPL
     data: mpl
-    order: 2
+    order: 11
   - stroke: -FRBL
     data: mbl
-    order: 2
+    order: 11
   - stroke: -FRP
     data: mp
-    order: 2
+    order: 11
   - stroke: -FRB
     data: mb
-    order: 2
+    order: 11
   - stroke: -FRL
     data: ml
-    order: 2
+    order: 11
   - stroke: -FPB
     data: fn
-    order: 2
+    order: 11
   - stroke: -FP
     data: ch
-    order: 2
+    order: 11
   - stroke: -FB
     data: v
-    order: 2
+    order: 11
   - stroke: -FT
     data: st
-    order: 2
+    order: 11
   - stroke: -F
     data: f
-    order: 2
+    order: 11
   - stroke: -RPB
     data: rn
-    order: 2
+    order: 12
   - stroke: -RB
     data: sh
-    order: 2
+    order: 12
   - stroke: -R
     data: r
-    order: 2
+    order: 12
   - stroke: "*PBG"
     data: nk
-    order: 2
+    order: 13
   - stroke: "*PZ"
     data: h
-    order: 2
+    order: 13
   - stroke: -PBLG
     data: j
-    order: 2
+    order: 13
   - stroke: -PBG
     data: ng
-    order: 2
+    order: 13
   - stroke: -PB
     data: n
-    order: 2
+    order: 13
   - stroke: -PL
     data: m
-    order: 2
+    order: 13
   - stroke: -PS
     data: h
-    order: 2
+    order: 13
   - stroke: -P
     data: p
-    order: 2
+    order: 13
   - stroke: -BGS
     data: x
-    order: 2
+    order: 14
   - stroke: "*BG"
     data: ck
-    order: 2
+    order: 14
   - stroke: -BG
     data: k
-    order: 2
+    order: 14
   - stroke: -B
     data: b
-    order: 2
-  - stroke: -P
-    data: p
-    order: 2
+    order: 14
   - stroke: "*LG"
     data: lk
-    order: 2
+    order: 15
   - stroke: -L
     data: l
-    order: 2
+    order: 15
   - stroke: -GT
     data: xt
-    order: 2
+    order: 16
   - stroke: -GS
     data: tion
-    order: 2
+    order: 16
   - stroke: -G
     data: g
-    order: 2
+    order: 16
   - stroke: "*T"
     data: th
-    order: 2
+    order: 17
   - stroke: -TS
     data: ts
-    order: 2
+    order: 17
   - stroke: -TZ
     data: se
-    order: 2
+    order: 17
   - stroke: -T
     data: t
-    order: 2
+    order: 17
   - stroke: "*SZ"
     data: c
-    order: 2
+    order: 18
   - stroke: "*S"
     data: st
-    order: 2
+    order: 18
   - stroke: -SD
     data: e
-    order: 2
+    order: 18
   - stroke: -S
     data: s
-    order: 2
+    order: 18
   - stroke: "*DZ"
     data: e
-    order: 2
+    order: 19
   - stroke: "*D"
     data: y
-    order: 2
+    order: 19
   - stroke: -D
     data: d
-    order: 2
+    order: 19
   - stroke: "*Z"
     data: z
-    order: 2
+    order: 20
   - stroke: -Z
     data: e
-    order: 2
+    order: 20
 
   # Vowels
   - stroke: AOEU
     data: ie
-    order: 1
+    order: 7
   - stroke: AOE
     data: ee
-    order: 1
+    order: 7
   - stroke: AO*
     data: i
-    order: 1
+    order: 7
   - stroke: A*
     data: u
-    order: 1
+    order: 7
   - stroke: AOU
     data: ue
-    order: 1
+    order: 7
   - stroke: AO
     data: oo
-    order: 1
+    order: 7
   - stroke: A*
     data: u
-    order: 1
+    order: 7
   - stroke: AEU
     data: ai
-    order: 1
+    order: 7
   - stroke: AE
     data: ea
-    order: 1
+    order: 7
   - stroke: AU
     data: au
-    order: 1
+    order: 7
   - stroke: A
     data: a
-    order: 1
+    order: 7
   - stroke: OEU
     data: oi
-    order: 1
+    order: 8
   - stroke: OE
     data: oe
-    order: 1
+    order: 8
   - stroke: OU
     data: ou
-    order: 1
+    order: 8
   - stroke: O*
     data: e
-    order: 1
+    order: 8
   - stroke: O
     data: o
-    order: 1
+    order: 8
   - stroke: EU
     data: i
-    order: 1
+    order: 9
   - stroke: E
     data: e
-    order: 1
+    order: 9
   - stroke: U
     data: u
-    order: 1
+    order: 10
+  - stroke: "*"
+    data: ""
+    order: 10
 
 # Exits determine when orthospelling should stop.
 #
