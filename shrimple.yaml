@@ -142,6 +142,9 @@ letters:
   - stroke: -FRL
     data: ml
     order: 2
+  - stroke: -FPB
+    data: fn
+    order: 2
   - stroke: -FP
     data: ch
     order: 2
@@ -153,6 +156,9 @@ letters:
     order: 2
   - stroke: -F
     data: f
+    order: 2
+  - stroke: -RPB
+    data: rn
     order: 2
   - stroke: -RB
     data: sh
