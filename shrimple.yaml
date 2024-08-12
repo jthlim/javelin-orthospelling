@@ -31,8 +31,10 @@ starters:
 # between 0 and 255 indicating how to cluster the output, so order 2 elements
 # may have higher stroke precedence, but will always be output after order 0
 # and 1.
+# avoidMask, if set, prevents the entry from being used if any of those
+# keys are present.
 letters:
-  - stroke: STKPWHR
+  - stroke: STKPW
     data: z
     order: 0
   - stroke: SKWR
@@ -53,25 +55,26 @@ letters:
   - stroke: TKPW
     data: g
     order: 1
-  - stroke: TKR
-    avoidMask: PWH
-    data: dr
-    order: 1
+  - stroke: KWR
+    avoidMask: PH
+    data: y
+    order: 2
+  - stroke: KR
+    avoidMask: TPWH
+    data: c
+    order: 2
   - stroke: TK
     data: d
     order: 1
-  - stroke: PHR
-    data: pl
+  - stroke: PW
+    data: b
     order: 3
-  - stroke: HR
-    data: l
-    order: 5
-  - stroke: TPW
-    data: tb
-    order: 1
   - stroke: TPHR
     data: tpl
     order: 1
+  - stroke: HR
+    data: l
+    order: 5
   - stroke: TPH
     data: n
     order: 1
@@ -84,27 +87,15 @@ letters:
   - stroke: KP
     data: x
     order: 2
-  - stroke: KWR
-    data: y
-    order: 2
   - stroke: KW
     data: q
     order: 2
   - stroke: KH
     data: ch
     order: 2
-  - stroke: KR
-    data: c
-    order: 2
   - stroke: K
     data: k
     order: 2
-  - stroke: PW
-    data: b
-    order: 3
-  - stroke: PR
-    data: pr
-    order: 3
   - stroke: PH
     data: m
     order: 3
