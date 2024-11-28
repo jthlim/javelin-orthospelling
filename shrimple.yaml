@@ -33,6 +33,15 @@ starters:
 # and 1.
 # avoidMask, if set, prevents the entry from being used if any of those
 # keys are present.
+# If two or more consecutive entries have the same stroke & avoidMask, then
+# they will all trigger. For example, with the following definition:
+#  - stroke: AEU
+#    data: a
+#    order: 7
+#  - stroke: AEU
+#    data: e
+#    order: 21
+# then pressing AEU will give a in the middle and e at the end of the word.
 letters:
   - stroke: STKPW
     data: z
